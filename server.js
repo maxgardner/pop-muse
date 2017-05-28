@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 // Set up mongoDB database
 mongoose.Promise = Promise;
-mongoose.connect(require("./config/mongokey"));
+mongoose.connect(require("./config/mongokey").key);
 const db = mongoose.connection;
 
 // Show any mongoose errors
