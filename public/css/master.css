@@ -20,9 +20,20 @@ body {
 }
 
 .nav {
-  float: right;
+  margin-bottom: 20px;
 }
 
 .nav .btn {
   margin-top: 0;
+}
+
+.btn-opaque {
+  background: none;
+  border: 1px solid #D2D2D2;
+  color: #D2D2D2;
+}
+
+.btn-opaque:hover {
+  border: 1px solid #FFF;
+  color: #FFF;
 }
