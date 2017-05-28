@@ -1,0 +1,20 @@
+body {
+  background: url("/images/content.png");
+}
+
+.jumbotron {
+  background: url("/images/bg.png");
+  color: #FFF;
+}
+
+.title-text {
+  font-family: 'Baloo', cursive;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+}
