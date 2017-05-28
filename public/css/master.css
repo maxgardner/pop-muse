@@ -18,3 +18,11 @@ body {
 .btn {
   margin-top: 10px;
 }
+
+.nav {
+  float: right;
+}
+
+.nav .btn {
+  margin-top: 0;
+}
