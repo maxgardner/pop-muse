@@ -1,3 +1,3 @@
 module.exports = {
-  mongoKey: "mongolab-encircled-50248"
+  key: "mongolab-encircled-50248"
 }
