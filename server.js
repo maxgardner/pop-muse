@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 // Set up mongoDB database
 mongoose.Promise = Promise;
-mongoose.connect('mongodb://localhost/popmuse');
+mongoose.connect(require("./config/mongokey"));
 const db = mongoose.connection;
 
 // Show any mongoose errors
