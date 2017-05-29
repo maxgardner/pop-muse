@@ -27,8 +27,7 @@ app.use(methodOverride('X-Method-Override'));
 
 // Set up mongoDB database
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/popmuse");
-// mongoose.connect(require("./config/mongodb").uri);
+mongoose.connect(require("./config/mongodb").uri);
 const db = mongoose.connection;
 
 // Show any mongoose errors
