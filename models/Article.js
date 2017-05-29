@@ -1,7 +1,6 @@
 module.exports = function(mongoose) {
-  const Schema = mongoose.Schema;
 
-  let ArticleSchema = new Schema({
+  let ArticleSchema = new mongoose.Schema({
     title: {
       type: String,
       required: true
@@ -15,7 +14,7 @@ module.exports = function(mongoose) {
       required: true
     },
     comments: [{
-      type: Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Comment"
     }]
   });

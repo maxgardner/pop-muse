@@ -7,6 +7,15 @@ body {
   color: #FFF;
 }
 
+blockquote {
+  font-style: normal;
+}
+
+.breadcrumb {
+  padding-left: 0;
+  background: none;
+}
+
 .title-text {
   font-family: 'Baloo', cursive;
 }
@@ -15,16 +24,27 @@ body {
   margin-bottom: 20px;
 }
 
-.btn {
-  margin-top: 10px;
+.cd-footer {
+  background: none,
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.footer-padded {
+  padding: 10px;
+}
+
+.initiate-delete {
+  padding-right: 10px;
+  color: #D9534F;
+}
+
+.error-text {
+  color: #D9534F;
 }
 
 .nav {
   margin-bottom: 20px;
-}
-
-.nav .btn {
-  margin-top: 0;
 }
 
 .btn-opaque {
@@ -36,4 +56,30 @@ body {
 .btn-opaque:hover {
   border: 1px solid #FFF;
   color: #FFF;
+}
+
+/*
+
+*  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+*  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+
+*/
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-music:before {
+  content: "\f001";
 }

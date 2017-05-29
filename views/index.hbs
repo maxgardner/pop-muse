@@ -1,0 +1,21 @@
+{{#if articles }}
+  {{#each articles }}
+  <div class="col-lg-3 col-sm-12">
+    <div class="card text-center card-outline-{{ this.class }}">
+      <div class="card-block">
+        <blockquote class="card-blockquote">
+          <h3>{{ this.title }}</h3>
+        </blockquote>
+      </div>
+      <footer class="cd-footer">
+        <a href="{{ this.link }}" class="btn btn-md btn-primary" target="_blank">
+          Read More
+        </a>
+        <a href="/{{ this._id }}/comments" class="btn btn-md btn-secondary">
+          Comments
+        </a>
+      </footer>
+    </div>
+  </div>
+  {{/each}}
+{{/if}}
